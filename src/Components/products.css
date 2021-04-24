@@ -1,0 +1,60 @@
+.Products {
+    display: grid;
+    height: 50%;
+    grid-area: p;
+}
+
+.Products ul {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    list-style: none;
+    /* grid-gap: 5px; */
+}
+
+.Products li {
+    /* border: 1px solid black; */
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2px;
+    padding: 2px;
+}
+
+.Products img {
+    width: 150px;
+    height: 150px;
+}
+
+.Products button {
+    margin: 5px;
+}
+
+.appDiv {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "p s"
+    "p c"
+}
+
+.ShoppingCart {
+    grid-area: s;
+}
+
+.Checkout {
+    grid-area: c;
+    
+}
+.Checkout form {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.Checkout form button {
+width: 75px;
+margin-top: 10px;
+
+}
